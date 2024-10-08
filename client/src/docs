@@ -1,0 +1,999 @@
+<div>
+        
+
+    <form className="max-w-sm mx-auto">
+      <div className="mb-5">
+        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+        <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+      </div>
+      <div className="mb-5">
+        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+        <input type="password" id="password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+      </div>
+      <div className="mb-5">
+        <label htmlFor="repeat-password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+        <input type="password" id="repeat-password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+      </div>
+      <div className="flex items-start mb-5">
+        <div className="flex items-center h-5">
+          <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+        </div>
+        <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+      </div>
+      <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+    </form>
+    
+        </div>
+        
+        // for trainer dashborder
+        <div>
+          <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a
+                href="#"
+                className="flex items-center space-x-3 rtl:space-x-reverse"
+              >
+                <span className="from-orange-500 text-6xl text-green-300">
+                  <CgGym />
+                </span>
+                {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  Flowbite
+                </span>
+              </a>
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path stroke="currentColor" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+              </button>
+              <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  {/* <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li> */}
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      Appointments
+                    </a>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div className="body">
+            <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+              <button
+                type="submit"
+                className="m-5 text-white   bg-sky-500 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              >Add Details</button>
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                  <th scope="col" className="px-6 py-3">
+                      Name
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Email
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Contact
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      qualification
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                    Expertise
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                    Specialization
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                    Message
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    >
+                      Apple MacBook Pro
+                    </th>
+                    <td className="px-6 py-4">Silver</td>
+                    <td className="px-6 py-4">Laptop</td>
+                    <td className="px-6 py-4">$2999</td>
+                    <td className="px-6 py-4">
+                      <a
+                        href="#"
+                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >
+                        Edit
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    >
+                      Microsoft Surface Pro
+                    </th>
+                    <td className="px-6 py-4">White</td>
+                    <td className="px-6 py-4">Laptop PC</td>
+                    <td className="px-6 py-4">$1999</td>
+                    <td className="px-6 py-4">
+                      <a
+                        href="#"
+                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >
+                        Edit
+                      </a>
+                    </td>
+                  </tr>
+                  <tr className="bg-white dark:bg-gray-800">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                    >
+                      Magic Mouse 2
+                    </th>
+                    <td className="px-6 py-4">Black</td>
+                    <td className="px-6 py-4">Accessories</td>
+                    <td className="px-6 py-4">$99</td>
+                    <td className="px-6 py-4">
+                      <a
+                        href="#"
+                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                      >
+                        Edit
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        trainer <nav>
+          <nav className="bg-gray-50 border-gray-200 dark:bg-gray-900"></nav>
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a
+                href="#"
+                className="flex items-center space-x-3 rtl:space-x-reverse"
+              >
+                <span className="from-orange-500 text-6xl text-green-300">
+                  <CgGym />
+                </span>
+                {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  fitness
+                </span>
+              </a>
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path stroke="currentColor" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+              </button>
+              <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  {/* <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                      aria-current="page"
+                    >
+                      Home
+                    </a>
+                  </li> */}
+                  <li>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                      Appointments
+                    </a>
+                    <a
+                      href="#"
+                      className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    >
+                    </a>
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
+
+
+
+        naaaa
+        react
+        import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from "react"
+import { Link } from "react-router-dom"
+const navigation = [
+  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Team', href: '#', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Calendar', href: '#', current: false },
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+function Header() {
+    const[profile,setProfile]=useState(false)
+   
+    const showProfile=()=>{
+        if(profile===true){
+            return setProfile(false)
+        }else{
+        return setProfile(true)}
+    }
+  return (
+  <>
+  <Disclosure as="nav" className="bg-gray-800">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            {/* Mobile menu button*/}
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <span className="absolute -inset-0.5" />
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
+              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+            </DisclosureButton>
+          </div>
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-shrink-0 items-center">
+              <img
+                alt="Your Company"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                className="h-8 w-auto"
+              />
+            </div>
+            <div className="hidden sm:ml-6 sm:block">
+              <div className="flex space-x-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    aria-current={item.current ? 'page' : undefined}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      'rounded-md px-3 py-2 text-sm font-medium',
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            {/* <button
+              type="button"
+              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              <span className="absolute -inset-1.5" />
+              <span className="sr-only">View notifications</span>
+              <BellIcon aria-hidden="true" className="h-6 w-6" />
+            </button> */}
+
+            {/* Profile dropdown */}
+            <Menu as="div" className="relative ml-3">
+              <div>
+                <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  <span className="absolute -inset-1.5" />
+                  <span className="sr-only">Open user menu</span>
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    className="h-8 w-8 rounded-full"
+                  />
+                </MenuButton>
+              </div>
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+              >
+                <MenuItem>
+                  <Link href="#" to='' className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    Your Profile
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    Settings
+                  </a>
+                </MenuItem>
+                <MenuItem>
+                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    Sign out
+                  </a>
+                </MenuItem>
+              </MenuItems>
+            </Menu>
+          </div>
+        </div>
+      </div>
+
+      <DisclosurePanel className="sm:hidden">
+        <div className="space-y-1 px-2 pb-3 pt-2">
+          {navigation.map((item) => (
+            <DisclosureButton
+              key={item.name}
+              as="a"
+              href={item.href}
+              aria-current={item.current ? 'page' : undefined}
+              className={classNames(
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                'block rounded-md px-3 py-2 text-base font-medium',
+              )}
+            >
+              {item.name}
+            </DisclosureButton>
+          ))}
+        </div>
+      </DisclosurePanel>
+    </Disclosure>
+
+
+
+    <nav className="bg-gray-800">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            {/* <!-- Mobile menu button--> */}
+            <button
+              type="button"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="absolute -inset-0.5"></span>
+              <span className="sr-only">Open main menu</span>
+              {/* <!--
+          Icon when menu is closed.
+
+          Menu open: "hidden", Menu closed: "block"
+        --> */}
+              <svg
+                className="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                //   stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  // stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              {/* <!--
+          Icon when menu is open.
+
+          Menu open: "block", Menu closed: "hidden"
+        --> */}
+              <svg
+                className="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-shrink-0 items-center">
+              {/* <img className="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/> */}
+            </div>
+            <div className="hidden sm:ml-6 sm:block">
+              <div className="flex space-x-4">
+                {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+                <a
+                  href="#"
+                  className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  aria-current="page"
+                >
+                  Fitness
+                </a>
+                <Link
+                  to="/trainerAppointment"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Appointments
+                </Link>
+
+                {/* <Link href="#" to='/trainersignup' className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Add details</Link> */}
+                {/*<a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
+              </div>
+            </div>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            {/* <button type="button" className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+        <span className="absolute -inset-1.5"></span>
+        <span className="sr-only">View notifications</span>
+        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+        </svg>
+      </button> */}
+
+            {/* <!-- Profile dropdown --> */}
+            <div className="relative ml-3">
+              <div>
+                <button
+                  type="button"
+                  onClick={showProfile}
+                  className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  id="user-menu-button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span className="absolute -inset-1.5"></span>
+                  <span className="sr-only">Open user menu</span>
+                  <img
+                    className="h-8 w-8 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                </button>
+              </div>
+
+              {profile && (
+                <div
+                  className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="user-menu-button"
+                >
+                  {/* <!-- Active: "bg-gray-100", Not Active: "" --> */}
+                  <Link
+                    to="/trainerprofile"
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="user-menu-item-0"
+                  >
+                    Your Profile
+                  </Link>
+                  {/* <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem"  id="user-menu-item-1">Settings</a> */}
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm text-gray-700"
+                    role="menuitem"
+                    id="user-menu-item-2"
+                  >
+                    Sign out
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <!-- Mobile menu, show/hide based on menu state. --> */}
+      <div className="sm:hidden" id="mobile-menu">
+        <div className="space-y-1 px-2 pb-3 pt-2">
+          {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+          <a
+            href="#"
+            className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            aria-current="page"
+          >
+            Dashboard
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >
+            Team
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >
+            Projects
+          </a>
+          <a
+            href="#"
+            className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+          >
+            Calendar
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    //full details trainer
+
+
+    // import React from "react";
+// import Razorpay  from 'razorpay'
+// import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getData, postData } from "../services/apiService";
+import {
+  Button,
+  Dialog,
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+  Input,
+} from "@material-tailwind/react";
+import Layout from "../components/layout/Layout";
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(true);
+    };
+    script.onerror = () => {
+      resolve(false);
+    };
+    document.body.appendChild(script);
+  });
+}
+function TrainerFullDetails() {
+  const id = sessionStorage.getItem("trainerId");
+  // const navigate = useNavigate();
+  const [tData, setData] = useState([]);
+  const [feedback, setFeedBack] = useState();
+  const [addFeedBack, setAddFeedBack] = useState(false);
+  const [viewFeedBack, setViewFeedBack] = useState(false);
+  const handleAddOpen = () => setAddFeedBack((cur) => !cur);
+  const [scheduleData, setScheduleData] = useState([]);
+  const [displayFeedback, setDisplayFeedback] = useState([]);
+  const userId = JSON.parse(localStorage.getItem("auth"));
+  const trainerId = tData.map((u) => u._id);
+  const amount=scheduleData.map((u) => u.amount);
+  console.log(amount);
+  
+  useEffect(() => {
+    getData("/tdata/fulldetails/" + id)
+      .then((result) => {
+        setData([result.data.trainer]);
+        setScheduleData([result.data.schedule]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  const handleViewFeedback = () => {
+    console.log(trainerId);
+    getData("/get/feedback/" + trainerId)
+      .then((result) => {
+        console.log(result);
+        setDisplayFeedback(result.data.details);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    if (viewFeedBack === true) {
+      return setViewFeedBack(false);
+    } else {
+      return setViewFeedBack(true);
+    }
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    postData(`/user/feedback/${userId.user._id}/${trainerId}`, { feedback })
+      .then((result) => {
+        if (result.data.success === true) {
+          setAddFeedBack(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+
+  async function displayRazorpay() {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+
+    if (!res) {
+      alert("Razropay failed to load!!");
+      return;
+    }
+
+    await postData("/razorpay",{
+        amount: amount, // Amount in INR
+        currency: 'INR',
+        receipt: 'receipt#1',
+      }).then((t) => {
+      console.log(t);
+    });
+
+    const options = {
+      key: "rzp_test_hra2QVyvVAP9HL", // Enter the Key ID generated from the Dashboard
+      amount: amount*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      currency: "INR",
+      name: "Acme Corp",
+      description: "Test Transaction",
+      image: "https://example.com/your_logo",
+    //   order_id: "order_IluGWxBm9U8zJ8", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      callback_url: "http://localhost:5173/verify",
+      notes: {
+        address: "Razorpay Corporate Office",
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
+  
+  return (
+    <Layout>
+      <>
+        <div className="body overflow-y-hidden sm:flex sm:w-full bg-slate-400 justify-stretch ">
+          <div className="max-w-sm w-full   sm:max-w-full lg:max-w-full lg:flex justify-center m-2 ">
+            <div
+              className="flex-none flex bg-cover rounded-t  lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+              title="Woman holding a mug"
+            >
+              {tData.map((p) => (
+                <>
+                  <img
+                    className="h-full sm:w-full object-cover max-w-[400px]"
+                    src={`http://localhost:3000/images/${p.photo}`}
+                    alt="Avatar of Jonathan Reinink"
+                  />
+                </>
+              ))}
+            </div>
+            <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div className="mb-1">
+                <p className="text-sm text-gray-600 flex items-center"></p>
+                <div className="text-gray-900 font-bold text-xl mb-2 min-w-[400px] sm:min-w-0 flex justify-between">
+                  <div className="btn md:flex-row sm:flex-col min-w-[400px] ">
+                    <Button
+                      onClick={handleViewFeedback}
+                      className="py-2 m-1 font-normal"
+                    >
+                      View Feedback
+                    </Button>
+                    <Button
+                      onClick={() => setAddFeedBack(true)}
+                      className="py-2 m-1 font-normal"
+                    >
+                      Add Feedback
+                    </Button>
+                  </div>
+                </div>
+
+                {tData.map((user) => (
+                  <>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Name
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.user.name}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Email
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.user.email}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Contact
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.user.contact}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Qualifications
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.qualifications}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Expertise
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.expertise}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Specialization
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.specialization}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Message
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.message}
+                        </li>
+                      </ul>
+                    </div>
+                  </>
+                ))}
+                {scheduleData.map((user) => (
+                  <>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Date
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.date}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Time
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.time}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="user-details flex justify-stretch m-1 ">
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          Amount
+                        </li>
+                      </ul>
+                      <ul className="w-48 text-sm font-medium m-1 shadow-md text-gray-900 p-1 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
+                          {user.amount}
+                        </li>
+                      </ul>
+                    </div>
+                  </>
+                ))}
+                <div className="btn flex justify-end m-2">
+                  
+                    <Button className="py-2 m-1 font-normal" onClick={displayRazorpay}>Payment</Button>
+                </div>
+              </div>
+            </div>
+            <div className="addfeedback">
+              <form action="">
+                <Dialog
+                  size="xs"
+                  open={addFeedBack}
+                  handler={handleAddOpen}
+                  className="bg-transparent shadow-none flex justify-center align-middle"
+                  style={{ marginTop: "200px" }}
+                >
+                  <Card className="mx-auto w-full e max-w-[24rem]">
+                    <CardBody className="flex flex-col gap-4">
+                      <Typography className="-mb-2" variant="h6">
+                        Enter FeedBack
+                      </Typography>
+                      <Input
+                        size="lg"
+                        type="text"
+                        placeholder="enter the feedback"
+                        onChange={(e) => setFeedBack(e.target.value)}
+                      />
+                    </CardBody>
+                    <CardFooter className="pt-0 flex justify-evenly">
+                      <Button
+                        variant="danger"
+                        type="submit"
+                        onClick={() => setAddFeedBack(false)}
+                        className="bg-red-500"
+                      >
+                        Cancel
+                      </Button>
+                      <Button
+                        variant=""
+                        type="submit"
+                        className="flex justify-evenly"
+                        onClick={handleSubmit}
+                      >
+                        Send
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </Dialog>
+              </form>
+            </div>
+          </div>
+          {viewFeedBack && (
+            <div
+              className="relative z-10"
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                aria-hidden="true"
+              ></div>
+
+              <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+                <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                  <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                    <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                      <div className="sm:flex sm:items-start">
+                        {displayFeedback.map((feed) => (
+                          <>
+                            <div className="">
+                              <div className="header flex align-middle ">
+                                <div className="mx-auto flex h-12  w-12 flex-shrink-0 items-center justify-center align-middle rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                                  <svg
+                                    className="h-6 w-6 text-red-600"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth={1.5}
+                                    stroke="currentColor"
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                    />{" "}
+                                  </svg>
+                                </div>
+                                <div className="user_name mx-2 p-2">
+                                  <h3
+                                    className="text-base font-semibold leading-6 text-gray-900"
+                                    id="modal-title"
+                                  >
+                                    {feed.userId.name}
+                                  </h3>
+                                </div>
+                              </div>
+                              <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                                <div className="mt-2">
+                                  <p className="text-sm text-gray-500 font-medium">
+                                    {feed.feedback}
+                                  </p>
+                                  <p className="text-sm text-gray-500 border-b-2 pt-2 w-[450px] flex justify-end">
+                                    <span className="m-2">{feed.date}</span>
+                                    <span className="m-2">{feed.time}</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                      <button
+                        type="button"
+                        onClick={() => setViewFeedBack(false)}
+                        className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </>
+    </Layout>
+  );
+}
+
+export default TrainerFullDetails;
