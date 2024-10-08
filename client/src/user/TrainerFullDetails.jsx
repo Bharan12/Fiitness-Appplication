@@ -13,6 +13,7 @@ import {
   Input,
 } from "@material-tailwind/react";
 import Layout from "../components/layout/Layout";
+import { useNavigate } from "react-router-dom";
 
 function TrainerFullDetails() {
   const id = sessionStorage.getItem("trainerId");
@@ -26,8 +27,7 @@ function TrainerFullDetails() {
   const [displayFeedback, setDisplayFeedback] = useState([]);
   const userId = JSON.parse(localStorage.getItem("auth"));
   const trainerId = tData.map((u) => u._id);
-  // const amount = scheduleData.map((u) => u.amount);
-  // console.log(amount);
+  const navigate=useNavigate()
 
   useEffect(() => {
     getData("/tdata/fulldetails/" + id)
@@ -69,12 +69,9 @@ function TrainerFullDetails() {
       });
   };
   const handleBooking = (id) => {
-    console.log(userId.user._id);
     postData(`/user/booking`, { userId: userId.user._id, sessionId: id })
       .then((result) => {
-        if (result.data.success === true) {
-          setAddFeedBack(false);
-        }
+        navigate('/userhome')
       })
       .catch((err) => {
         console.log(err);
@@ -256,6 +253,7 @@ function TrainerFullDetails() {
                     <div className="btn flex justify-end m-2">
                       <Button
                         className="py-2 m-1 font-normal"
+
                         onClick={() => handleBooking(user.user._id)}
                       >
                         Booking

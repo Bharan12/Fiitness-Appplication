@@ -83,7 +83,7 @@ function TrainerHome() {
                 Trainer only
               </p>
               <div className="text-gray-900 font-bold text-xl mb-2 min-w-[400px] sm:min-w-0 flex justify-between">
-                I AM Trainer
+                I am Trainer
                 <div className="btn md:flex-row sm:flex-col min-w-[400px] ">
                   {addBtn && (
                     <button

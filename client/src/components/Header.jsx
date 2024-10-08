@@ -55,6 +55,7 @@ function Header() {
   const data = JSON.parse(localStorage.getItem("auth"));
   useEffect(() => {
     getData("/booking/data/status/" + data.user._id).then((res) => {
+      console.log(res.data.user)
       setBooking(res.data.user);
     });
   }, []);
@@ -323,34 +324,25 @@ function Header() {
                         <tbody>
                           {booking.length > 0 ? (
                             booking.map((data) =>
-                              // Ensure 'data' is not null and fields exist
-                              data ? (
+                              data && data.details ? (
                                 <tr key={data.details._id}>
-                                  <td className="px-6">
-                                    {data.details.date || "N/A"}
-                                  </td>
-                                  <td className="px-6">
-                                    {data.details.time || "N/A"}
-                                  </td>
-                                  <td className="px-6">
-                                    {data.details.amount || "N/A"}
-                                   
-                                  </td>
+                                  <td className="px-6">{data.details.date || "N/A"}</td>
+                                  <td className="px-6">{data.details.time || "N/A"}</td>
+                                  <td className="px-6">{data.details.amount || "N/A"}</td>
                                   <td className="px-6">
                                     {data.status === "approved" ? (
                                       <Button
                                         className="py-2 m-1 font-normal"
-                                        onClick={()=>displayRazorpay(data.details.amount)}
+                                        onClick={() => displayRazorpay(data.details.amount)}
                                       >
                                         Payment
                                       </Button>
                                     ) : (
                                       <button
-                                        // onClick={() => handleApprove()}
                                         className="rounded-md bg-red-500 py-2 px-5 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-500 focus:shadow-none active:bg-red-700 hover:bg-red-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
                                         type="button"
                                       >
-                                        Waiting for approve
+                                        Waiting for approval
                                       </button>
                                     )}
                                   </td>
