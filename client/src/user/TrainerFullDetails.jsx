@@ -90,15 +90,17 @@ function TrainerFullDetails() {
               className="flex-none flex bg-cover rounded-t  lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
               title="Woman holding a mug"
             >
-              {tData.map((p) => (
-                <>
+                {tData?.map((p, index) => (
+              p &&  p.photo ? (
+                <div key={index}>
                   <img
                     className="h-full sm:w-full object-cover max-w-[400px]"
                     src={`http://localhost:3000/images/${p.photo}`}
                     alt="Avatar of Jonathan Reinink"
                   />
-                </>
-              ))}
+                </div>
+              ) : null
+            ))}
             </div>
             <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div className="mb-1">
@@ -120,9 +122,9 @@ function TrainerFullDetails() {
                   </div>
                 </div>
 
-                {tData.map((user) => (
+                {tData.map((user,index) => (
                   <>
-                    <div className="user-details flex justify-stretch m-1 ">
+                    <div className="user-details flex justify-stretch m-1 " key={index}>
                       <ul className="w-48 text-sm font-medium m-1 shadow-md p-1 text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                         <li className="w-full px-2 py-2  border-gray-200 rounded-t-lg dark:border-gray-600">
                           Name
@@ -324,9 +326,9 @@ function TrainerFullDetails() {
                   <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                     <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                       <div className="sm:flex sm:items-start">
-                        {displayFeedback.map((feed) => (
+                        {displayFeedback.map((feed,index) => (
                           <>
-                            <div className="">
+                            <div className="" key={index}>
                               <div className="header flex align-middle ">
                                 <div className="mx-auto flex h-12  w-12 flex-shrink-0 items-center justify-center align-middle rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
                                   <svg

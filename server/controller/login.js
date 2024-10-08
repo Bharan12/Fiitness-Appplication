@@ -4,6 +4,7 @@ const {createSceretToken}=require('../utils/tokenUtils')
 module.exports.SignIn = async (req, res,next) => {
     try {
         const { email, password } = req.body;
+        console.log(email,password)
         const user= await userModel.findOne({email})
         if (!user) {
             return res.json({ message: 'User Not Found' })

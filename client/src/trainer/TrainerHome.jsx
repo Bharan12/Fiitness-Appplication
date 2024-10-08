@@ -18,6 +18,7 @@ function TrainerHome() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
   const [scheduleData, setScheduleData] = useState();
+  console.log(tData)
   const id = JSON.parse(localStorage.getItem("auth"));
   useEffect(() => {
     if (tData && tData.length >= 0) {
@@ -57,14 +58,16 @@ function TrainerHome() {
             className="flex-none flex bg-cover rounded-t   lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
             title="Woman holding a mug"
           >
-            {tData.map((p) => (
-              <>
-                <img
-                  className="h-full sm:w-full object-cover max-w-[400px]"
-                  src={`http://localhost:3000/images/${p.photo}`}
-                  alt="Avatar of Jonathan Reinink"
-                />
-              </>
+            {tData?.map((p, index) => (
+              p &&  p.photo ? (
+                <div key={index}>
+                  <img
+                    className="h-full sm:w-full object-cover max-w-[400px]"
+                    src={`http://localhost:3000/images/${p.photo}`}
+                    alt="Avatar of Jonathan Reinink"
+                  />
+                </div>
+              ) : null
             ))}
           </div>
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
