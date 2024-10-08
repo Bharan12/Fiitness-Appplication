@@ -63,7 +63,7 @@ function TrainerHome() {
                 <div key={index}>
                   <img
                     className="h-full sm:w-full object-cover max-w-[400px]"
-                    src={`http://localhost:3000/images/${p.photo}`}
+                    src={`https://fiitness-appplication-5.onrender.com/images/${p.photo}`}
                     alt="Avatar of Jonathan Reinink"
                   />
                 </div>

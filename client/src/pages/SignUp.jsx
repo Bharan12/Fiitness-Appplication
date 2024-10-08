@@ -10,7 +10,7 @@ function SignUp() {
   const onSubmit = (e) => {
     e.preventDefault()
     console.log(udata)
-    axios.post("http://localhost:3000/signup", udata)
+    axios.post("https://fiitness-appplication-5.onrender.com/signup", udata)
     
       .then((data) => {
        console.log(data)

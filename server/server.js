@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(express.static('Assets'))
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://fiitness-appplication-5.onrender.com',
     methods:["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))

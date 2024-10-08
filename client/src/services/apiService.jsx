@@ -2,19 +2,19 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 const postData = (api,values) => {
-    const url='http://localhost:3000';
+    const url='https://fiitness-appplication-5.onrender.com';
     return axios.post(url+api,values)
 };
 const getData = (api) => {
-    const url='http://localhost:3000';
+    const url='https://fiitness-appplication-5.onrender.com';
     return axios.get(url+api)
 };
 const putData = (api,values) => {
-    const url='http://localhost:3000';
+    const url='https://fiitness-appplication-5.onrender.com';
     return axios.put(url+api,values)
 };
 const deleteData = (api) => {
-    const url='http://localhost:3000';
+    const url='https://fiitness-appplication-5.onrender.com';
     console.log(api);
     return axios.delete(url+api)
 };
