@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(express.static('Assets'))
 app.use(cors({
-    origin:'https://fiitness-appplication-5.onrender.com',
+    origin:'https://tiny-bavarois-3f4464.netlify.app',
     methods:["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))
